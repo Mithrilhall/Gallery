@@ -206,8 +206,10 @@
           obj[options.urlProperty] = '//www.youtube.com/watch?v=' + videoId
         }
         if (this.getItemProperty(obj, options.videoPosterProperty) === undefined) {
+          // obj[options.videoPosterProperty] = '//img.youtube.com/vi/' + videoId +
+          //   '/maxresdefault.jpg'
           obj[options.videoPosterProperty] = '//img.youtube.com/vi/' + videoId +
-            '/maxresdefault.jpg'
+            '/hqdefault.jpg'
         }
         return this.videoFactory(
           obj,
